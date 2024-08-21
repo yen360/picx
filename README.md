@@ -26,28 +26,30 @@
 * 管理页面支持分页加载图片
 
 ### 使用教程
-* 1.fork项目到自己的github
-* 2.注册CloudFlare并开通R2服务
-* 3.找到Pages选项并且创建项目
-* 4.选择项目创建方式
-* 5.链接Github或GitLab并选需要构建的项目
-*   框架预设：无
-*   构建命令：npm run build
-*   输出目录：dist
-*   完成创建
-* 6.设置环境变量
-* AUTH_TOKEN：授权码
-* BASE_URL：复制的路径，如无，则输入page域名(e.g. www.example.com)
-* 7.设置项目的函数信息绑定R2和KV服务
-* Workers & Pages -> {Project Name} -> Settings -> Functions
-  ![Bind KV](https://pics.steventan.work/8M8lBhK.png)
-  ![Bind R2](https://pics.steventan.work/FtnlBhK.png)
-* 8.重新部署
+1. fork项目到自己的github
+2. 注册CloudFlare并开通R2服务
+3. 找到Pages选项并且创建项目
+4. 选择项目创建方式
+5. 链接Github或GitLab并选需要构建的项目
+  1.  框架预设：无
+  2.  构建命令：npm run build
+  3.  输出目录：dist
+  4.  完成创建
+6. 设置环境变量
+  1.  AUTH_TOKEN：授权码
+  2.  BASE_URL：复制的路径，如无，则输入page域名(e.g. www.example.com)
+7. 设置项目的函数信息绑定R2和KV服务
+  1.  Workers & Pages -> {Project Name} -> Settings -> Functions
+  2.  [Bind KV](https://pics.steventan.work/8M8lBhK.png)
+  3.  [Bind R2](https://pics.steventan.work/FtnlBhK.png)
+8. 重新部署
 
 
 ### 项目参考来源
 [1. cfworker-kv-image-hosting](https://github.com/realByg/cfworker-kv-image-hosting)
 
 [2. HikariSearch](https://github.com/mixmoe/HikariSearch)
+
+---
 
 项目fork自roimdev/roim-picx
