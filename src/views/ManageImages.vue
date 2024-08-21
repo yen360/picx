@@ -34,8 +34,9 @@
 				>
 					<image-box
 						:src="item.url"
+						:copyUrl="item.copyUrl"
 						:name="item.key"
-            :size="item.size"
+            					:size="item.size"
 						@delete="deleteImage(item.key)"
 						mode="uploaded"
 					/>
