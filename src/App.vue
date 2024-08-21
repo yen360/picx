@@ -6,7 +6,7 @@
 					class="w-full h-16 bg-rose-100/50 shadow-sm sticky left-0 top-0 backdrop-blur-sm z-10"
 				>
 					<div class="mx-auto max-w-6xl px-4 h-full flex items-center">
-						<a href="pics.steventan.work/PRPfBhK.png" target="_blank"><img src="./assets/picx-logo.png" class="w-8 h-8 block mr-2"></a>
+						<a href="https://picx.steventan.work/" target="_blank"><img src="./assets/picx-logo.png" class="w-8 h-8 block mr-2"></a>
 						<div class="text-lg">
 							{{ appName }}
 						</div>
