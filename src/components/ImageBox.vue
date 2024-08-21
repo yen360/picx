@@ -87,6 +87,7 @@ import LoadingOverlay from '../components/LoadingOverlay.vue'
 
 const props = defineProps<{
 	src: string
+	copyUrl:string // 新增 
 	name: string
 	size: number
 	mode: 'converted' | 'uploaded'
