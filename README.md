@@ -31,34 +31,26 @@
 ### 使用教程
 * 1.fork项目到自己的github
 * 2.注册CloudFlare并开通R2服务
-![Upload](https://oss.tuqu.me/roim/blog/cf/r2.png)
 * 3.找到Pages选项并且创建项目
-![Upload](https://oss.tuqu.me/roim/blog/cf/pages1.png)
 * 4.选择项目创建方式
-![Upload](https://oss.tuqu.me/roim/blog/cf/pages2.png)
-* 4.链接Github或GitLab并选需要构建的项目
-  ![Upload](https://oss.tuqu.me/roim/blog/cf/pages3.png)
-  ![Upload](https://oss.tuqu.me/roim/blog/cf/pages4.png)
-* 5.设置环境变量
-> 因为cloudflare默认的node版本较低需要手动指定版本，否在会导致构建失败.
-    ![Upload](https://oss.tuqu.me/roim/blog/cf/pages5.png)
-* 6.设置项目的函数信息绑定R2和KV服务
-![Upload](https://oss.tuqu.me/roim/blog/cf/pages6.png)
-![Upload](https://oss.tuqu.me/roim/blog/cf/pages7.png)
-* 7.构建项目，提示成功即可访问
-  ![Upload](https://oss.tuqu.me/roim/blog/cf/pages8.png)
+* 5.链接Github或GitLab并选需要构建的项目
+*   框架预设：无
+*   构建命令：npm run build
+*   输出目录：dist
+*   完成创建
+* 6.设置环境变量
+* AUTH_TOKEN：授权码
+* BASE_URL：复制的路径，如无，则输入page域名(e.g. www.example.com)
+* 7.设置项目的函数信息绑定R2和KV服务
+* Workers & Pages -> {Project Name} -> Settings -> Functions
+![Upload](https://pics.steventan.work/8M8lBhK.png)
+![Upload](https://pics.steventan.work/FtnlBhK.png)
+* 8.重新部署
 
-> 注意：Pages的函数变量名称需要于项目的变量名称一致，如果需要修改functions里面的Env名空间，对应的文件是`[[path]].ts`
-
-### 图床截图
-![Upload](https://oss.tuqu.me/roim/blog/5.png)
-![Preview](https://oss.tuqu.me/roim/blog/1.png)
-![HTML](https://oss.tuqu.me/roim/blog/2.png)
-![Markdown](https://oss.tuqu.me/roim/blog/3.png)
-![Link](https://oss.tuqu.me/roim/blog/4.png)
-![Manage](https://oss.tuqu.me/roim/blog/6.png)
 
 ### 项目参考来源
 [1. cfworker-kv-image-hosting](https://github.com/realByg/cfworker-kv-image-hosting)
 
 [2. HikariSearch](https://github.com/mixmoe/HikariSearch)
+
+项目fork自roimdev/roim-picx
