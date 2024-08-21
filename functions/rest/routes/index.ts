@@ -17,7 +17,7 @@ const auth = async (request : Request, env : Env) => {
         return json(NotAuth())
     }
     // with kv equal
-    const authKey = await env.XK.get('PICX_AUTH_TOKEN')
+    const authKey = env.AUTH_TOKEN;
     if (!authKey) {
         return json(Fail("system not auth setting"))
     }
@@ -34,7 +34,7 @@ router.post('/checkToken', async (req : Request, env : Env) => {
     if (!token) {
         return json(Ok(false))
     }
-    const authKey = await env.XK.get('PICX_AUTH_TOKEN')
+    const authKey = env.AUTH_TOKEN;
     if (!authKey) {
         return json(Ok(false))
     }
