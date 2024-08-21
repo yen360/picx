@@ -42,10 +42,10 @@
 			<div v-if="mode === 'uploaded'">
 				<el-divider class="m-0" />
 				<div class="w-full flex text-white h-9 text-center text-sm">
-					<el-tooltip :content="src" placement="top-start">
+					<el-tooltip :content="copyUrl" placement="top-start">
 						<div
 							class="flex-1 flex items-center justify-center cursor-pointer"
-							@click="copyLink(src)"
+							@click="copyLink(copyUrl)"
 						>
 							<font-awesome-icon :icon="faCopy" class="mr-2" />
 							链接
@@ -87,7 +87,7 @@ import LoadingOverlay from '../components/LoadingOverlay.vue'
 
 const props = defineProps<{
 	src: string
-	copyUrl:string // 新增 
+	copyUrl: string // 新增 
 	name: string
 	size: number
 	mode: 'converted' | 'uploaded'
